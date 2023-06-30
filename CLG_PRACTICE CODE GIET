@@ -1,0 +1,330 @@
+'''a=10
+b=15
+sum=a+b
+sub=a-b
+div=a/b
+mul=a*b
+print('Addition=',sum)
+print('Subtration=',sub)
+print('Division=',div)
+print('Multipication=',mul)'''
+
+#String manupulation
+
+'''name = "Balbir is a bsd boy"
+
+st = name[1:3]
+print(st)
+
+name = "balbir is a bad boy"
+
+print(name.capitalize())
+print(name.find('b'))
+
+stname = input(str("enter the name- "))
+print(stname)
+
+#Adding&substration
+num1=int(input("Enter a no.-"))
+num2=int(input("Enter the 2nd no.- "))
+add=num1+num2
+print(add)
+sub=num1-num2
+print(sub)
+
+#chacking the string end with string
+
+st1 = 'Programming'
+print(st1.endswith('ing'))
+
+#Splitr a  string  into half
+
+string = 'Programming'
+n = int((len(string))/2)
+print(string[ : n])
+
+#replace a old word into new word
+
+string = 'omm is bokachoda '
+n= string.replace('is','is a')
+print(n)
+
+String = input("Enter a name- ")
+print(String,"Good Morning")
+
+#lists
+lists= [1,3,5,2]
+lists.sort()
+#list.reverse()
+print(lists)
+
+lists= [1,3,5,2]
+print(lists[ :3])
+
+#append
+lists= [1,3,5,2]
+lists.append(7) #append - add in last
+print(lists)
+
+#pop
+lists= [1,3,5,2]
+lists.pop(1)
+print(lists)
+
+#remove
+lists= [1,3,5,2]
+lists.remove(5)
+print(lists)
+
+#Tuple
+a=(1,3,5,6,2)
+print(a.count(2))
+print(a.index(2))
+
+#Dictionaries
+a={
+    "key":"value",
+    "name":"myname",
+    "marks":"100",
+    "list":[1,3,5,6,3]
+}
+print(a["marks"])
+print(a.items())
+print(a.keys())
+print(a.values())
+#display all the keys
+
+dic={
+    "name":"roll",
+    "Rishabh":53,
+    "paramjeet":50,
+    "Balbir":11
+    }
+print(dic.keys())
+#update a value
+dic.update({"name":"stname"})
+print(dic)
+#print specific values
+print(dic.get("paramjeet"))
+#print tuple and find repeting values
+t=(2,4,56,2,33,3,2)
+print(t.count(2))
+
+#Sets
+a={1,2,4,5}
+print(len(a)) #Find length of a set
+a.remove(4) #Removes 8 from the set
+print(a)
+a.clear() #clears every element from the set
+print(a)
+
+set1={1,2,4,6}
+set2={1,3,6,5}
+
+setdiff=set1.difference(set2) #Displays the difference of the both sets
+print(setdiff)
+setsame=set1.intersection(set2) #Displays the similar element of both sets
+print(setsame)
+setunion=set1.union(set2) #Displays all the values in a new set
+print(setunion)
+
+#set.pop()
+
+
+#conditional statements in python(if,elif,else)
+#syntax
+a = 20
+if(a >= 19):
+    print("yes")
+elif(a == 20):
+    print("Again yes")
+else:
+    print("no")
+
+
+#check whether the person is eligible for vote or note
+
+age=int(input("Enter the age of the person-  "))
+if(age >= 18):
+    print("you are eligible for vote")
+      
+else:
+    print("you are not eligible for vote")
+
+#check the no. is even or odd
+num=int(input("enter the no.- "))
+if(num%2==0):
+    print("even")
+else:
+    print("odd")
+
+#Electric bill
+unit=int(input("Enter the Electic Unit-  "))
+if(unit<=100):
+    print("No amount be charged")
+elif(unit>=100 and unit<200):
+    print("Your amount is ",(5*unit))
+elif(unit>=200 and unit<300):
+    print("Your amount is ",(10*unit))
+else:
+    print("your amount is  ",(15*unit))
+
+#interation in python for loop and while loop
+#Definite Loop
+i=0
+while i<5:
+    print("looping")
+    i=i+1
+print("done")
+
+#indefinite loop 
+n =5
+while n>0:
+    print("looping")
+print("done")
+'''
+
+# #Top print Item of the a list
+# l=[1,3,5,6,2]
+# for item in l:
+#     print(item)
+
+#Breaking out of a loop
+
+# while True:
+#     line=input('>')
+#     if line =="done":
+#         break
+#     print(line)
+# print("done")
+
+#Skipping a part in a loop
+# while True:
+#     line=input('Rishabh')
+#     if line =="#":
+#         continue
+#     if line =="done":
+#         break
+#     print(line)
+# print("done")
+
+#Another type of For loop
+
+# for i in range(0,10):
+#     print(i)
+#Check the no. is prime no. or not
+# num=int(input("Enter the no.- "))
+# for i in range(2,int(num/2)):
+#     if(num%i == 0):
+#         print("the no. is not a prime no.")
+#         break
+#     else:
+#         print("the no. is prime no.")
+#         break
+# print("done")
+
+#Additional of natural no. and calculate the average
+# a=0
+# for i in range(1,11):
+#     print(i)
+#     a=a+i
+# avg=a/10
+# print("the sum of 1st 10 natural no.-",a)
+# print("the average of 1st 10 natural no.- ",avg)
+   
+#Add all item in a list
+
+# l=[]
+# for i in range(0,5):
+#     a=int(input("enter the no. to add on list"))
+#     l.append(a)
+
+# print(l)
+# s=0
+# l=[1,3,4,5,6]
+# for i in l:
+#     s=i+s
+# print(s)
+
+#Search in a list
+
+
+# l=[1,2,3,4,9]
+# key=int(input("Enter the search element- "))
+
+# if key in l:
+#     print("found")
+    
+# else:
+#     print("not found")
+    
+
+#Functions in python
+
+# def newfunc():
+#     print("This is my function")
+# print("Hello World") #driver  code
+# newfunc()
+
+# def newfunc(name):
+#     return name
+# name="Rishabh"
+# print("hello",newfunc(name))
+
+# def sum(a,b):
+#     return a+b
+# num1=2
+# num2=3
+# print(sum(num1,num2))
+
+#function to check the no. is even or odd
+
+# def digit(n):
+    
+#     if n%2==0:
+#         print("the no. is even")
+#     else:
+#         print("the no. is odd")
+
+# digit(n=int(input("enter the no.- ")))
+
+# def func(name):
+#     return name
+
+# name=input("enter the name- ")
+
+# print("Goodmoring ",func(name))
+
+#WAP with 4 function doing addition,substration,multiplication,division.
+
+# def add(a,b):
+#     return a+b
+
+# def sub(a,b):
+#     return a-b
+
+# def mul(a,b):
+#     return a*b
+
+# def div(a,b):
+#     return a/b
+
+# num1=int(input("Enter the 1st no.- "))
+# num2=int(input("Enter the 2nd no.- "))
+# user=input("enter the operation- ")
+
+
+# if user=="+":
+#     print("the addition is- ",add(num1,num2))
+# elif user=="-":
+#     print("the substration is- ",sub(num1,num2))
+# elif user=="*":
+#     print("the multipication is- ",mul(num1,num2))
+# elif user=="/":
+#     print("the division is- ",div(num1,num2))
+# else:
+#     print("invalid")
+
+def default(name="rishabh"):  #default parameter
+    print(name)
+default("paramjeet")  #changing default parameter
